@@ -1,8 +1,8 @@
-#https://source.developers.google.com/p/gcp-devops-436402/r/repo-5
+#https://github.com/carterword/repo-5.git
 
 steps:
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://source.developers.google.com/p/gcp-devops-436402/r/repo-5']
+  args: ['clone', 'https://github.com/carterword/repo-5.git']
 
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t',  'gcr.io/${_PROJECT_ID}/${_CINAME}:${_VERSION}', '.']
