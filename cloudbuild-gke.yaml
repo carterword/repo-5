@@ -15,7 +15,7 @@ steps:
   args :
   - 'set'
   - 'image'
-  - 'deployment/cicd-app-1'
+  - 'deployment/cicd-deployment-1'
   - 'runimage-sha256-1=gcr.io/${_PROJECT_ID}/${_CINAME}:${_VERSION}'
   env : 
   - 'CLOUDSDK_COMPUTE_ZONE=us-south1-a'
